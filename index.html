@@ -827,23 +827,29 @@ function spToReviewer(item) {
 function defaultState() {
   return {
     projects: [
-      {id:'p1',spId:null,projectNum:'PROJECT-2024-001',name:'Hwy 20 Drainage Improvements — 50% Phase 1',pm:'John Smith',taskLead:'Sarah Chen',organizerEmail:'schen\u0040pondco.com',reviewerName:'J. Martinez',reviewerEmail:'j.martinez\u0040pondco.com',reviewType:'TQC',state:'GA',hpd:'2025-07-15',budgetedHours:40,loggedHours:18,status:'in-review',submitted:'2025-06-01',notes:'Redline - Revision B',completedDate:'',logs:[{date:'2025-06-03',hours:6,note:'Drainage calcs review'},{date:'2025-06-05',hours:8,note:'Grading & earthwork'},{date:'2025-06-10',hours:4,note:'Utility conflicts'}]},
-      {id:'p2',spId:null,projectNum:'PROJECT-2024-002',name:'Oakwood Subdivision Phase 2 — 90%',pm:'Mike Torrence',taskLead:'Dana Holloway',organizerEmail:'dholloway\u0040pondco.com',reviewerName:'A. Patel',reviewerEmail:'a.patel\u0040pondco.com',reviewType:'TRC',state:'TN',hpd:'2025-07-22',budgetedHours:24,loggedHours:5,status:'in-review',submitted:'2025-06-08',notes:'',completedDate:'',logs:[{date:'2025-06-09',hours:5,note:'Initial review kickoff'}]},
-      {id:'p3',spId:null,projectNum:'PROJECT-2023-078',name:'Riverside Pump Station — 100%',pm:'Leon Park',taskLead:'Chris Walsh',organizerEmail:'cwalsh\u0040pondco.com',reviewerName:'T. Brooks',reviewerEmail:'t.brooks\u0040pondco.com',reviewType:'TQC',state:'FL',hpd:'2025-06-10',budgetedHours:20,loggedHours:20,status:'complete',submitted:'2025-05-20',notes:'All comments addressed',completedDate:'2025-06-12',logs:[{date:'2025-06-02',hours:10,note:'Structural'},{date:'2025-06-06',hours:10,note:'Mechanical/Electrical'}]},
-      {id:'p4',spId:null,projectNum:'PROJECT-2024-003',name:'Airport Perimeter Road — 30%',pm:'Jess Nolan',taskLead:'Rachel Kim',organizerEmail:'rkim\u0040pondco.com',reviewerName:'',reviewerEmail:'',reviewType:'ITR',state:'GA',hpd:'2025-08-05',budgetedHours:32,loggedHours:0,status:'queued',submitted:'2025-06-12',notes:'FAA compliance required',completedDate:'',logs:[]},
+      {id:'p1',spId:null,projectNum:'1240869',name:'WM Pine Bluff 30% Phase 1',pm:'N. Addo',taskLead:'H. Saam',organizerEmail:'h.saam\u0040pondco.com',reviewerName:'A. Amelia',reviewerEmail:'a.amelia\u0040pondco.com',reviewType:'TQC',state:'AR',hpd:'2025-07-15',budgetedHours:40,loggedHours:12,status:'in-review',submitted:'2025-06-01',notes:'30% Redline Review',completedDate:'',logs:[{date:'2025-06-03',hours:6,note:'Drainage calcs review'},{date:'2025-06-05',hours:6,note:'Grading & earthwork'}]},
+      {id:'p2',spId:null,projectNum:'1250399',name:'Signature Roanoke IFC',pm:'V. Nguyen',taskLead:'K. Patel',organizerEmail:'k.patel\u0040pondco.com',reviewerName:'B. Cruztitla-Juarez',reviewerEmail:'b.cruztitla-juarez\u0040pondco.com',reviewType:'TRC',state:'VA',hpd:'2025-07-22',budgetedHours:24,loggedHours:5,status:'in-review',submitted:'2025-06-08',notes:'',completedDate:'',logs:[{date:'2025-06-09',hours:5,note:'Initial review kickoff'}]},
+      {id:'p3',spId:null,projectNum:'1250044',name:'MVL Diego Garcia 100%',pm:'M. DeShields',taskLead:'P. Patel',organizerEmail:'p.patel\u0040pondco.com',reviewerName:'N. Addo',reviewerEmail:'n.addo\u0040pondco.com',reviewType:'TQC',state:'FL',hpd:'2025-06-10',budgetedHours:20,loggedHours:20,status:'complete',submitted:'2025-05-20',notes:'All comments addressed',completedDate:'2025-06-12',logs:[{date:'2025-06-02',hours:10,note:'Structural review'},{date:'2025-06-06',hours:10,note:'Mechanical/Electrical'}]},
+      {id:'p4',spId:null,projectNum:'1250649',name:'AGL Temple to Bremen 90% Phase 1',pm:'H. Saam',taskLead:'V. Nguyen',organizerEmail:'v.nguyen\u0040pondco.com',reviewerName:'K. Patel',reviewerEmail:'k.patel\u0040pondco.com',reviewType:'TQC',state:'GA',hpd:'2025-08-05',budgetedHours:32,loggedHours:28,status:'in-review',submitted:'2025-06-10',notes:'90% review cycle',completedDate:'',logs:[{date:'2025-06-11',hours:14,note:'Plan set review'},{date:'2025-06-14',hours:14,note:'Spec review'}]},
+      {id:'p5',spId:null,projectNum:'1240217',name:'ET Rahway IFC',pm:'B. Cruztitla-Juarez',taskLead:'M. DeShields',organizerEmail:'m.deshields\u0040pondco.com',reviewerName:'H. Saam',reviewerEmail:'h.saam\u0040pondco.com',reviewType:'ITR',state:'NJ',hpd:'2025-08-20',budgetedHours:16,loggedHours:0,status:'queued',submitted:'2025-06-12',notes:'IFC package review',completedDate:'',logs:[]},
+      {id:'p6',spId:null,projectNum:'1250650',name:'Loma Miramar IFC',pm:'A. Amelia',taskLead:'N. Addo',organizerEmail:'n.addo\u0040pondco.com',reviewerName:'V. Nguyen',reviewerEmail:'v.nguyen\u0040pondco.com',reviewType:'TQC',state:'CA',hpd:'2025-09-01',budgetedHours:28,loggedHours:0,status:'queued',submitted:'2025-06-14',notes:'',completedDate:'',logs:[]},
+      {id:'p7',spId:null,projectNum:'1260054',name:'TECO Ft Myers 60%',pm:'P. Patel',taskLead:'B. Cruztitla-Juarez',organizerEmail:'b.cruztitla-juarez\u0040pondco.com',reviewerName:'M. DeShields',reviewerEmail:'m.deshields\u0040pondco.com',reviewType:'TRC',state:'FL',hpd:'2025-08-10',budgetedHours:20,loggedHours:12,status:'in-review',submitted:'2025-06-15',notes:'60% milestone review',completedDate:'',logs:[{date:'2025-06-16',hours:6,note:'Civil drawings'},{date:'2025-06-18',hours:6,note:'Drainage report'}]},
     ],
     reviewers: [
-      {id:'r1',spId:null,name:'J. Martinez',email:'j.martinez\u0040pondco.com'},
-      {id:'r2',spId:null,name:'A. Patel',email:'a.patel\u0040pondco.com'},
-      {id:'r3',spId:null,name:'T. Brooks',email:'t.brooks\u0040pondco.com'},
-      {id:'r4',spId:null,name:'C. Walsh',email:'c.walsh\u0040pondco.com'},
-      {id:'r5',spId:null,name:'R. Okafor',email:'r.okafor\u0040pondco.com'},
+      {id:'r1',spId:null,name:'N. Addo',email:'n.addo\u0040pondco.com'},
+      {id:'r2',spId:null,name:'H. Saam',email:'h.saam\u0040pondco.com'},
+      {id:'r3',spId:null,name:'A. Amelia',email:'a.amelia\u0040pondco.com'},
+      {id:'r4',spId:null,name:'V. Nguyen',email:'v.nguyen\u0040pondco.com'},
+      {id:'r5',spId:null,name:'K. Patel',email:'k.patel\u0040pondco.com'},
+      {id:'r6',spId:null,name:'B. Cruztitla-Juarez',email:'b.cruztitla-juarez\u0040pondco.com'},
+      {id:'r7',spId:null,name:'M. DeShields',email:'m.deshields\u0040pondco.com'},
+      {id:'r8',spId:null,name:'P. Patel',email:'p.patel\u0040pondco.com'},
     ],
     invites: [
-      {id:'i1',from:'Sarah Chen',fromEmail:'schen\u0040pondco.com',subject:'PROJECT-2024-001 - Hwy 20 Drainage 50% Phase 1 (Redline - Revision B)',when:'Mon Nov 10 – Wed Nov 12, 2025',required:'Civil_TQC_Calendar\u0040pondco.com; j.martinez\u0040pondco.com',body:'PM: John Smith, HPD: 07/15/2025, State: GA, Budgeted Hours: 40',time:'Jun 1, 2025',read:false,parsed:false},
-      {id:'i2',from:'Rachel Kim',fromEmail:'rkim\u0040pondco.com',subject:'PROJECT-2024-003 - Airport Perimeter Road 30% Phase 1 (Redline - Rev A)',when:'Mon Aug 4 – Tue Aug 5, 2025',required:'Civil_TQC_Calendar\u0040pondco.com; r.okafor\u0040pondco.com',body:'PM: Jess Nolan, HPD: 08/05/2025, State: GA, Budgeted Hours: 32',time:'Jun 12, 2025',read:true,parsed:false},
+      {id:'i1',from:'H. Saam',fromEmail:'h.saam\u0040pondco.com',subject:'1250649 - AGL Temple to Bremen 90% Phase 1 (Redline - Revision B)',when:'Mon Nov 10 – Wed Nov 12, 2025',required:'Civil_TQC_Calendar\u0040pondco.com; k.patel\u0040pondco.com',body:'PM: H. Saam, HPD: 08/05/2025, State: GA, Budgeted Hours: 32',time:'Jun 10, 2025',read:false,parsed:false},
+      {id:'i2',from:'A. Amelia',fromEmail:'a.amelia\u0040pondco.com',subject:'1250650 - Loma Miramar IFC (Redline - Rev A)',when:'Mon Aug 4 – Tue Aug 5, 2025',required:'Civil_TQC_Calendar\u0040pondco.com; v.nguyen\u0040pondco.com',body:'PM: A. Amelia, HPD: 09/01/2025, State: CA, Budgeted Hours: 28',time:'Jun 14, 2025',read:true,parsed:false},
     ],
-    alerts: [{icon:'📅',title:'Meeting Invite Received',body:'PROJECT-2024-001 from schen\u0040pondco.com',time:'Jun 1, 2025'}],
+    alerts: [{icon:'📅',title:'Meeting Invite Received',body:'1250649 - AGL Temple to Bremen from h.saam\u0040pondco.com',time:'Jun 10, 2025'}],
     nextId: 200,
   };
 }
